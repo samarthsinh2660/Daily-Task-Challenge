@@ -1,0 +1,184 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
+  
+  /* Main Container */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+  
+  /* Pool Money (Prize) Section */
+  .pool {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pool h2 {
+    margin: 0 10px;
+  }
+  
+  /* Prize Buttons */
+  .prize-btn {
+    padding: 5px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0d6efd;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prize-btn:hover {
+    background-color: #0b5ed7;
+  }
+  
+  /* Section Styling for New Task, Tasks, and Winner */
+  .new-task, .tasks, .winner-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #111;
+  }
+  
+  /* Input Fields */
+  .input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  /* User Selection */
+  .user-select {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .user-select label {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  /* General Buttons */
+  .btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0d6efd;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0b5ed7;
+  }
+  
+  .btn.small {
+    padding: 5px 10px;
+    font-size: 0.9em;
+  }
+  
+  .btn.delete {
+    background-color: #dc3545;
+  }
+  
+  .btn.delete:hover {
+    background-color: #bb2d3b;
+  }
+  
+  /* Tasks Container: Two-Column Layout */
+  .tasks-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* Each User's Tasks Styling */
+  .user-tasks {
+    flex: 1;
+    min-width: 300px;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Colored Left Borders for Each User */
+  .user-tasks.user1 {
+    border-left: 5px solid #0d6efd; /* Blue for Samarth */
+  }
+  
+  .user-tasks.user2 {
+    border-left: 5px solid #dc3545; /* Red for Krishika */
+  }
+  
+  .user-tasks h4 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Task List Items */
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+  }
+  
+  .task-item.completed .task-text {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  .task-actions button {
+    margin-left: 10px;
+  }
+  
+  /* Winner Section */
+  .winner {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffc107;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    .tasks-container {
+      flex-direction: column;
+    }
+    .input {
+      width: 100%;
+    }
+  }
+  
